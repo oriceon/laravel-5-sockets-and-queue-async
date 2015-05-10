@@ -241,9 +241,11 @@ and add at the end
 
 *In my vagrant ubuntu 14.04 it was already installed but i prefer to remove the old one and install it in correct path (you should see if you have it installed. Be careful if you want to delete it, you have to see exactly how has been configured)*
 
-`sudo apt-get remove supervisor --purge`
-`sudo rm -rf /var/log/supervisor`
-`sudo apt-get autoremove`
+```
+sudo apt-get remove supervisor --purge
+sudo rm -rf /var/log/supervisor
+sudo apt-get autoremove
+```
 
 **Install Supervisor**
 
