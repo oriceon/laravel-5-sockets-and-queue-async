@@ -208,11 +208,13 @@ And take a look into terminal. You should see these two connection like:
 
 #Queue Async with Beanstalkd
 
-`sudo apt-get update`
-`sudo apt-get upgrade`
+```
+sudo apt-get update
+sudo apt-get upgrade
 
-`sudo apt-get install beanstalkd`
-`sudo nano /etc/default/beanstalkd`
+sudo apt-get install beanstalkd
+sudo nano /etc/default/beanstalkd
+```
 
 **Change listen address**
 
