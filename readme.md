@@ -298,7 +298,13 @@ After 60 seconds, you will see again notice on user 2 tab and log updated.
 That`s all!
 
 
+#Thanks
 
+David for his code share https://github.com/davidsoderberg/codeblock
+
+http://fideloper.com/ubuntu-beanstalkd-and-laravel4/
+
+http://posts.danharper.me/laravel-queue-supervisor/
 
 
 
