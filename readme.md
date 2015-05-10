@@ -271,9 +271,11 @@ Open supervisor control
 
 then run
 
-`reread`
-`add queue`
-`start queue`
+```
+reread
+add queue
+start queue
+```
 
 if it's saying that it's already started, just don't panic, it`s ok! :)
 
