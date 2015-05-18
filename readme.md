@@ -23,6 +23,8 @@ server {
     server_name queue-sockets.dev www.queue-sockets.dev;
     set $root_path '/var/www/queue-sockets/public';
     root $root_path;
+    
+    sendfile off;
 
     index index.php index.html index.htm;
 
@@ -64,7 +66,25 @@ then reload nginx
 and test if http://queue-sockets.dev/ is workin` ok!
 
 
-## Create users
+##Corrupted or non-updating files VirtualBox bug
+
+If you're using the VirtualBox provider, then VirtualBox shared folders are the default synced folder type. These synced folders use the VirtualBox shared folder system to sync file changes from the guest to the host and vice versa.
+
+There is a VirtualBox bug related to sendfile which can result in corrupted or non-updating files. You should deactivate sendfile in any web servers config files you may be running.
+
+**In Nginx:**
+
+`sendfile off;`
+
+**In Apache:**
+
+`EnableSendfile Off`
+
+See vagrant docs: http://docs.vagrantup.com/v2/synced-folders/virtualbox.html
+
+
+
+##Create users
 
 **edit .env file to fill database credentials**
 
